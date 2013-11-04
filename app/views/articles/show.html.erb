@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @article.author %>
+</p>
+
+<p>
+  <strong>Heading:</strong>
+  <%= @article.heading %>
+</p>
+
+<p>
+  <strong>Perex:</strong>
+  <%= @article.perex %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @article.body %>
+</p>
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>
