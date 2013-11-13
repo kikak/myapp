@@ -1,5 +1,6 @@
 class Article < ActiveRecord::Base
-	# bude zavolan pokazde tesne pred ulozenim objektu do databaze. Bude volana privatni metoda set_perex
+	has_many :comment
+  # bude zavolan pokazde tesne pred ulozenim objektu do databaze. Bude volana privatni metoda set_perex
       before_save :set_perex
 
       validates_presence_of :heading, :author, :body 
